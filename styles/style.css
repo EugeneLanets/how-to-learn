@@ -1,3 +1,10 @@
+:root {
+  --color-blue: #2f80ed;
+  --color-grey: #f2f2f2;
+  --color-dark-grey: #1f1f1f;
+  --color-black: #000;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -8,9 +15,18 @@ html {
   box-sizing: inherit
 }
 
-.paragraph-reset {
+/* Обнуление margin и padding */
+.extra-space-reset {
   padding: 0;
   margin: 0;
+}
+
+.centered-block {
+  margin: auto;
+}
+
+.centered-block_horisontally {
+  margin: 0 auto;
 }
 
 .page {
@@ -22,6 +38,7 @@ html {
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: black;
 }
 
 /* Шапка */
@@ -31,7 +48,7 @@ html {
   max-height: 756px;
   padding-left: 64px;
   position: relative;
-  background-color:  #f2f2f2;
+  background-color: var(--color-grey) ;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,7 +73,7 @@ html {
 
 .header__link {
   text-decoration: none;
-  color: #2f80ed;
+  color: var(--color-blue);
 }
 
 .header__main-illustration {
@@ -74,7 +91,7 @@ html {
   position: absolute;
   top: 64px;
   right: 0;
-  background-color: #2f80ed;
+  background-color: var(--color-blue);
 }
 
 
@@ -88,4 +105,38 @@ html {
 .logo_place_header {
   top: 30px;
   left: 64px;
+}
+
+/* Description */
+.description {
+  padding: 100px 0;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.two-columns__brief {
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: var(--color-blue);
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.two-columns__paragraph:not(:last-child) {
+  padding-bottom: 30px;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
 }
