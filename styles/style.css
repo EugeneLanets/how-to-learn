@@ -207,3 +207,47 @@ html {
 .table__text:not(:last-child) {
   padding-bottom: 20px;
 }
+
+
+/* Feynman */
+
+.feynman {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 890px;
+  background-color: var(--color-grey);
+  background-image: url('../images/feynman.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 867px 637px;
+  position: relative;
+}
+
+.feynman__title {
+  width: 648px;
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 120px;
+  line-height: 1.15;
+  font-weight: bold;
+}
+
+.feynman__subtitle {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  color: var(--color-blue);
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+
+}
