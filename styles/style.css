@@ -1,33 +1,3 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-/* Обнуление margin и padding */
-.extra-space-reset {
-  padding: 0;
-  margin: 0;
-}
-
-.list-reset {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.centered-block {
-  margin: auto;
-}
-
-.centered-block_horisontally {
-  margin: 0 auto;
-}
-
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -37,6 +7,7 @@ html {
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 /* Шапка */
@@ -51,9 +22,12 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: inherit;
 }
 
 .header__title {
+  padding: 0;
+  margin: 0;
   width: 730px;
   font-size: 102px;
   font-weight: bold;
@@ -62,6 +36,8 @@ html {
 }
 
 .header__subtitle {
+  padding: 0;
+  margin: 0;
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -99,10 +75,10 @@ html {
 
 .logo {
   width: 183px;
-  height: 32px;
 }
 
 .logo_place_header {
+  height: 32px;
   position: absolute;
   top: 30px;
   left: 64px;
@@ -112,10 +88,16 @@ html {
   height: 35px;
 }
 
+.content {
+  box-sizing: inherit;
+}
+
 /* Description */
 
 .description {
   padding-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .two-columns {
@@ -125,6 +107,8 @@ html {
 }
 
 .two-columns__brief {
+  padding: 0;
+  margin: 0;
   width: 175px;
   font-size: 18px;
   line-height: 1.2;
@@ -139,8 +123,13 @@ html {
   line-height: 34px;
 }
 
+.two-columns__paragraph {
+  padding: 0;
+  margin: 0;
+}
+
 .two-columns__paragraph:not(:last-child) {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .two-columns__span-accent {
@@ -150,6 +139,8 @@ html {
 /* Шапка секции */
 
 .section-title {
+  margin: 0;
+  padding: 0;
   width: 60%;
   text-align: center;
   font-size: 60px;
@@ -162,6 +153,8 @@ html {
 }
 
 .section-subtitle {
+  margin: 0;
+  padding: 0;
   width: 60%;
   text-align: center;
   font-size: 24px;
@@ -178,6 +171,9 @@ html {
 
 .digits {
   padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .digits__title {
@@ -187,6 +183,9 @@ html {
 /* Table */
 
 .table {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   width: 1100px;
   display: flex;
   justify-content: space-between;
@@ -209,26 +208,31 @@ html {
 }
 
 .table__heading {
-  padding-bottom: 20px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
   font-size: 24px;
   line-height: 1.15;
   font-weight: bold;
 }
 
 .table__text {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
 }
 
 .table__text:not(:last-child) {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 
 /* Feynman */
 
 .feynman {
+  box-sizing: inherit;
   padding-top: 100px;
   display: flex;
   flex-direction: column;
@@ -243,6 +247,8 @@ html {
 }
 
 .feynman__title {
+  margin: 0;
+  padding: 0;
   width: 648px;
   text-align: center;
   margin-bottom: 70px;
@@ -252,6 +258,8 @@ html {
 }
 
 .feynman__subtitle {
+  margin: 0;
+  padding: 0;
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
@@ -277,9 +285,10 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 90px;
+  padding: 90px 0;
   overflow: hidden;
   position: relative;
+  box-sizing: inherit;
 }
 
 .kaufman__table {
@@ -297,6 +306,8 @@ html {
   top: 0;
   right: -210px;
   z-index: 1;
+  background-image: url('../images/kaufman-triangle.svg');
+  background-size: cover;
 }
 
 /* Footer */
@@ -306,13 +317,15 @@ html {
   padding: 60px 0 40px;
   min-height: 350px;
   color: #fff;
+  box-sizing: inherit;
+  display: flex;
+  justify-content: center;
 }
 
 .footer__columns {
   width: 90%;
   display: flex;
   justify-content: space-between;
-  min-height: 250px;
 }
 
 .footer__column {
@@ -322,21 +335,28 @@ html {
 
 .footer__column_content_copyright{
   flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer__author {
   padding: 18px 0;
-  margin-top: auto;
+  margin: 0;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
 }
 
 .footer__column-links {
+  margin: 0;
   padding: 20px 0 16px;
+  list-style: none;
 }
 
 .footer__column-heading {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
