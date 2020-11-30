@@ -297,6 +297,7 @@
 
 .kaufman__title {
   margin-bottom: 20px;
+  z-index: 2;
 }
 
 .kaufman__triangle {
