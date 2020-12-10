@@ -9,4 +9,5 @@
   flex-direction: column;
   justify-content: center;
   box-sizing: inherit;
+  overflow: hidden;
 }
