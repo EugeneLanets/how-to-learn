@@ -73,9 +73,9 @@
         <h2 class="section-title video__title">Видео нa TED</h2>
         <p class="section-subtitle video__subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
-          <iframe width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__iframe"></iframe>
+          <iframe src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__iframe"></iframe>
 
-          <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__iframe"></iframe>
+          <iframe src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__iframe"></iframe>
         </div>
       </section>
 
@@ -141,7 +141,7 @@
         <div class="khan__container">
           <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
-          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
+          <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</blockquote>
           <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
@@ -154,7 +154,7 @@
 
       <section class="kaufman">
         <h2 class="section-title section-title_theme_dark kaufman__title">Принципы обучения</h2>
-        <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
+        <p class="section-subtitle section-subtitle_theme_dark kaufman__subtitle">от Джоша Кауфмана</p>
         <ul class="table table_theme_dark kaufman__table">
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading">1</h3>
@@ -203,12 +203,20 @@
       <section class="resources">
         <h2 class="section-title resources__title">Полезные ресурсы</h2>
         <p class="section-subtitle resources__subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-        <div class="resources__logo-zone">
-          <img src="./images/logo/resources-arzamas.svg" alt="Логотип Arzamas" class="resources__logo">
-          <img src="./images/logo/resources-n1.svg" alt="Логотип N+1" class="resources__logo">
-          <img src="./images/logo/resources-strelka.svg" alt="Логотип Strelka" class="resources__logo">
-          <img src="./images/logo/resources-polka.svg" alt="Логотип Polka" class="resources__logo">
-        </div>
+        <ul class="resources__logo-zone">
+          <li><a target="_blank" href="https://arzamas.academy/" class="resources__logo">
+            <img src="./images/logo/resources-arzamas.svg" alt="Логотип Arzamas" >
+          </a></li>
+          <li><a target="_blank" href="https://nplus1.ru/" class="resources__logo">
+            <img src="./images/logo/resources-n1.svg" alt="Логотип N+1">
+          </a></li>
+          <li><a target="_blank" href="https://strelkamag.com/ru/" class="resources__logo">
+            <img src="./images/logo/resources-strelka.svg" alt="Логотип Strelka">
+          </a></li>
+          <li><a target="_blank" href="https://polka.academy/" class="resources__logo">
+            <img src="./images/logo/resources-polka.svg" alt="Логотип Polka">
+          </a></li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
